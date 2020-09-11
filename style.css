@@ -78,6 +78,15 @@ i {
   width: 350px;
 }
 
+.content-search-gt {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: small;
+  width: 200px;
+}
+
 .content-btv-tg {
   display: inline-block;
   margin: 10px 0px 0px 0px;
@@ -141,6 +150,14 @@ i {
   white-space: nowrap;
   overflow: hidden;
   vertical-align: top;
+}
+
+#main-category .main-content .col-8 .row .col-6 {
+  margin-bottom: 0px;
+}
+
+#main-category {
+  margin-bottom: 300px;
 }
 
 footer {
