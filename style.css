@@ -72,6 +72,15 @@ i {
   width: 96%;
 }
 
+.search {
+  border-radius: 5px;
+  border-color: #ced4de !important;
+}
+
+.d-flex {
+  display: flex;
+}
+
 .picture-reading img {
   max-width: 40px;
   max-height: 70px;
