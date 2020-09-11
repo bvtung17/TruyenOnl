@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Truyện Online</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <nav class="top-nav">
+            <div class="container d-flex">
+
+                <ul class="top-menu list-unstyled mb-0 mr-auto d-flex justify-content-center">
+                    <!--mb = margin botton -->
+                    <li class="bg-white">
+                        <a href="./homepage.html" class="d-block px-3 py-2">
+                            TruyenOnl.Com
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="list-unstyled mb-0 ml-auto d-flex justify-content-center">
+                    <li>
+                        <a href="./homepage.html" class="d-block px-3 py-2">
+                            <!--Display block px = padding + left-->
+                            Đăng nhập
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./homepage.html" class="d-block px-3 py-2">
+                            Đăng ký
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <!--Spacing trong boostrap-->
+            <div class="container d-flex align-items-center"><a href="./homepage.html" class="mr-auto pb-4 pt-3 ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Microsoft_Groove_logo.png" alt="logo" height="40"></a>
+                <div class="d-flex">
+                    <input type="text" name="text" placeholder="Tìm kiếm" class="form-control border-tertiary">
+                    <button type="button" class="btn btn-outline-secondary search">
+                        <a href="./search.html"><i class="fa fa-search"></i></a>
+                    </button>
+                </div>
+
+                <ul class="d-flex list-unstyled ml-auto">
+                    <li class="px-1">
+                        <button type="button" class="btn btn-info">Tủ Truyện</button>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar--main navbar-expand navbar-dark bg-secondary">
+            <div class="container px-3">
+                <ul class="navbar-nav">
+
+                    <div class="d-flex container px-3">
+
+                        <div class="navbar-nav mr-auto">
+                            <div class="dropdown mr-1">
+
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                    Thể Loại
+                                </button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                    <a class="dropdown-item" href="./category.html">Tất Cả</a>
+                                    <a class="dropdown-item" href="./category.html">Huyền Huyễn</a>
+                                    <a class="dropdown-item" href="./category.html">Tiên Hiệp</a>
+                                    <a class="dropdown-item" href="./category.html">Võng Du</a>
+                                </div>
+
+                            </div>
+
+                            <div class="dropdown mr-1">
+
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                    Bảng Xếp Hạng
+                                </button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                    <a class="dropdown-item" href="./ranking.html">Đọc Nhiều</a>
+                                    <a class="dropdown-item" href="/ranking.html">Đánh Giá</a>
+                                    <a class="dropdown-item" href="./ranking.html">Thảo Luận</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div style="margin-left: 500px;">
+                            <ul class="navbar-nav ml-5">
+                                <li class="px-1 float-right">
+                                    <button type="button" class="btn btn-danger">Đăng Truyện</button>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-detail">
+        <div class="detail-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <section class="picture-detail">
+                            <img src="https://static.cdnno.com/poster/dao-gioi-thien-ha/300.jpg?t=1596525418" alt="truyen" class="shadow" align="left">
+                        </section>
+                    </div>
+
+                    <div class="col-9">
+                        <section class="detail-name">
+                            <h4><a href="./detail.html">Đạo Giới Thiên Hạ </a>
+                                <a href="./detail.html" style="margin-left: 10px;"><i class="far fa-flag"></i></a>
+                            </h4>
+                        </section>
+
+                        <section>
+                            <button type="button" class="btn btn-outline-primary">
+                                <a href="./category.html">Hồ Hưng</a>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">Đang Ra</button>
+                            <button type="button" class="btn btn-outline-success">Huyền Huyễn</button>
+                            <button type="button" class="btn btn-outline-danger">Đông Phương</button>
+                            <button type="button" class="btn btn-outline-warning">Bối Cảnh</button>
+                            <button type="button" class="btn btn-outline-info">Thể Loại</button>
+                        </section>
+
+                        <div class="list-unstyled">
+                            <ul>
+                                <li class="d-flex">
+                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">2.1M</p>
+                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">1000</p>
+                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">199.2K</p>
+                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">79</p>
+                                </li>
+                                <li class="d-flex">
+                                    <p style="margin: 0px 55px 0px 0px;">Chữ</p>
+                                    <p style="margin: 0px 36px 0px 0px;">Chương</p>
+                                    <p style="margin: 0px 33px 0px 0px;">Lượt Đọc</p>
+                                    <p style="margin: 0px 50px 0px 0px;">Đề Cử</p>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <p class="d-flex">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            <p></p>
+                            4/5 (100 đánh giá)
+                            </p>
+                        </div>
+
+                        <button type="button" class="btn btn-success">Đọc Tiếp</button>
+                        <button type="button" class="btn btn-danger">Đánh Dấu</button>
+                        <button type="button" class="btn btn-warning">Đề Cử</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <button type="button" class="btn btn-outline-primary active" style="margin-right: 30px;">
+                        <a href="./detail.html">Giới Thiệu</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
+                        <a href="./detail.html">Đánh Giá</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
+                        <a href="./detail.html">Danh Sách Chương</a>
+                    </button>
+                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
+                        <a href="./detail.html">Bình Luận</a>
+                    </button>
+                </div>
+                <br>
+
+                <div class="row">
+
+                    <div class="col-9">
+                        <div class="review row">
+                            Giới Thiệu Truyện
+                            <br>
+                            <br>
+                            <br>
+                            Nếu như bạn đã đọc Thần Mộ, chắc chắn bạn sẽ không quên được Thần Đông (Ngô Biển Quân). Sau Trường Sinh Giới, tác giả đã nghỉ viết một thời gian, có lẽ để cày kéo cho tác phẩm mới: Già Thiên thêm hấp dẫn.
+                            <br>
+                            <br>
+                            - Diệp Phàm là nhân vật chính của toàn bộ câu chuyện, một người ngoài trông thư sinh, nhưng bên trong lại cực kỳ tráng kiện, hành động quyết đoán, nhưng lại là người ôn hòa, trọng tình cảm. Không có phi thăng khi mở đầu,
+                            không
+                            có tử vong để trọng
+                            sinh, không có khuyết tật, yếu kém. Diệp Phàm cứ bình thường trải qua những tao ngộ đầy hấp dẫn.
+                            <br>
+                            <br>
+                            - Truyện không sáng tạo ra một thế giới khác, nhưng lại khéo léo gợi mở ra những chi tiết thần bí, không chớp nhoáng đưa ngay người đọc vào một không gian xa lạ, mà như số mệnh đã sắp đặt cho nhân vật vậy. Trên thế gian
+                            thật
+                            sự có thần tồn tại, hay
+                            những sự tích đầy thần bí từ xưa có thật hay không. Cửu Long kéo quan tài, phá toái hư không, một hành trình đã định sẵn cho những người đi theo dấu chân của Thần.
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <div class="list-unstyled">
+                            <div class="list-inline-item d-block">
+                                <p>
+                                    <span class="font-weight-bold">Cảm Xúc</span>
+                                    <span style="margin-left: 80px;">
+                                        <i class="far fa-kiss-wink-heart"></i>10
+                                    </span>
+                                    <span style="margin-left: 30px;">
+                                        <i class="far fa-thumbs-up"></i>20
+                                    </span>
+                                    <span style="margin-left: 30px;">
+                                        <i class="far fa-angry"></i>30
+                                    </span>
+                                    <span style="margin-left: 30px;">
+                                        <i class="far fa-sad-cry"></i>40
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="list-unstyled">
+                            <div class="list-inline-item d-block">
+                                <p>
+                                    <span class="font-weight-bold">Đề Cử</span>
+                                    <span style="margin-left: 98px;">
+                                        <i class="fab fa-canadian-maple-leaf"></i>10
+                                    </span>
+
+                                    <span class="float-right font-weight-bold">
+                                        No. 192
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="list-unstyled">
+                            <div class="list-inline-item d-block">
+                                <p>
+                                    <span class="font-weight-bold">Chương Mới</span>
+                                    <span style="margin-left: 50px;">
+                                        <a href="./detail.html">
+                                            Chương 1000: Nhóm 08 - Web</a>
+                                    </span>
+
+                                    <span class="float-right">
+                                        30 phút trước
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div id="detail-info-manager" class="col-3">
+
+                        <div class="row">
+                            <div class="messi-circle">
+                                <img src="https://www.freepngimg.com/thumb/doraemon/71299-nobi-youtube-nobita-television-doraemon-free-photo-png-thumb.png">
+                            </div>
+                        </div>
+
+                        <p class="font-weight-bold text-center">
+                            Hồ Hưng
+                        </p>
+
+                        <hr>
+
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://static.cdnno.com/poster/dao-gioi-thien-ha/300.jpg?t=1596525418" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://static.cdnno.com/poster/dao-gioi-thien-ha/300.jpg?t=1596525418" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://static.cdnno.com/poster/dao-gioi-thien-ha/300.jpg?t=1596525418" alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+
+                        <div>
+                            <br>
+                            <p class="font-weight-bold text-center">
+                                <a href="./detail.html">Đạo Giới Thiên Hạ</a>
+                            </p>
+
+                            <div class="content-detail-gt">
+                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất..
+                            </div>
+                            <div class="content-search-tg">
+                                <br>
+                                <a href="#"><i class="far fa-id-badge" style="margin-left: 20px;"></i>Hồ Hưng</a>
+                                <span class="small px-2 ml-4">
+                                    <i class="fas fa-bars"></i>
+                                    80 Chương
+                                </span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="card text-center">
+            <div class="card-header">
+            </div>
+
+            <div class="card-body">
+                <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                <a href="#" class="btn btn-primary">Trang Chủ</a>
+            </div>
+
+            <div class="card-footer text-muted">
+                Được thực hiện bởi nhóm 8 - &copy 2010-2020
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>

@@ -55,6 +55,17 @@ i {
   margin: 0px 10px 0px 0px;
 }
 
+.picture-detail img {
+  display: inline-block;
+  width: 210px;
+  height: 280px;
+  margin: 0px 10px 0px 0px;
+}
+
+.detail-content .col-3 {
+  height: 300px;
+}
+
 .picture-search img {
   display: inline-block;
   max-width: 100px;
@@ -246,6 +257,24 @@ i {
   box-shadow: 0 0 0 3px rgb(0, 0, 0), 0px 21px 5px -18px rgba(0, 0, 0, 0.6);
   background: rgb(0, 0, 0);
   text-align: center;
+}
+
+#detail-info-manager {
+  background-color: antiquewhite;
+  width: 250px;
+  height: 700px;
+  border-radius: 20px;
+  float: right !important;
+}
+
+.detail-content .col-9 div {
+  width: 830px;
+}
+
+.messi-circle img {
+  width: 100px;
+  height: 100px;
+  margin: 20px 0px 10px 90px;
 }
 
 footer {
