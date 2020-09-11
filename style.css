@@ -80,13 +80,21 @@ i {
 
 .ranking-week {
   height: 558px;
-  width: 300px;
-  padding: 16px 24px 8px 24px;
+  width: 350px;
+  padding: 16px 24px 20px 24px;
   box-shadow: #fff;
 }
 
 .list-group-item {
-  width: 290px;
+  width: 300px;
+}
+
+.main-ranking .col-4 {
+  padding: 0px 0px 0px 0px;
+}
+
+.main-ranking {
+  margin-top: 50px;
 }
 
 .shadow {
@@ -96,12 +104,12 @@ i {
 .ranking-week-list-name {
   display: inline-block;
   text-overflow: ellipsis;
-  width: 135px;
+  width: 170px;
   white-space: nowrap;
   overflow: hidden;
   vertical-align: top;
 }
 
 footer {
-  height: 200px;
+  margin: 50px 0px 0px 0px;
 }
