@@ -82,9 +82,14 @@ i {
 }
 
 .picture-reading img {
-  max-width: 40px;
+  max-width: 60px;
   max-height: 70px;
   margin: 0px 10px 0px 0px;
+}
+
+.picture-reading .shadow {
+  height: 65px;
+  width: 55px;
 }
 
 .ranking-week {
