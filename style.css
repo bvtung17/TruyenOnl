@@ -33,7 +33,6 @@ i {
 
 .top-nav {
   background-color: #f4f4f4;
-  min-height: 40px;
 }
 
 .navbar-nav .ml-auto {
@@ -42,7 +41,7 @@ i {
 
 .main-content {
   width: 1170px;
-  height: 380px;
+  height: auto;
   margin: auto;
   padding: auto;
   border-radius: 5px;
@@ -185,6 +184,7 @@ i {
   position: relative;
   float: left;
   background: url(https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg);
+  background-repeat: repeat;
   box-shadow: 0 0 5px 2px #282a2d;
   background-size: contain;
   text-transform: uppercase;
@@ -274,7 +274,7 @@ i {
 .messi-circle img {
   width: 100px;
   height: 100px;
-  margin: 20px 0px 10px 90px;
+  margin: 20px 0px 10px 0px;
 }
 
 footer {
