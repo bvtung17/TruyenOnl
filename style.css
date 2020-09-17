@@ -47,6 +47,14 @@ i {
   border-radius: 5px;
 }
 
+.main-content-category {
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  border-radius: 5px;
+}
+
 .picture-btv img {
   display: inline-block;
   max-width: 100px;
@@ -93,7 +101,7 @@ i {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  width: 350px;
+  width: 200px;
 }
 
 .content-category-gt {
@@ -168,14 +176,6 @@ i {
   white-space: nowrap;
   overflow: hidden;
   vertical-align: top;
-}
-
-#main-category .main-content .col-8 .row .col-6 {
-  margin-bottom: 0px;
-}
-
-#main-category {
-  margin-bottom: 300px;
 }
 
 .ribbon {
