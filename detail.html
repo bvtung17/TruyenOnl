@@ -13,122 +13,130 @@
 
 <body>
     <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <a class="navbar-brand" href="#" style="margin-right: 50px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Microsoft_Groove_logo.png" alt="logo" height="40">
+                TruyenOnl
+            </a>
 
-        <nav class="top-nav">
-            <div class="container d-flex">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <ul class="top-menu list-unstyled mb-0 mr-auto d-flex justify-content-center">
-                    <!--mb = margin botton -->
-                    <li class="bg-white">
-                        <a href="./homepage.html" class="d-block px-3 py-2">
-                            TruyenOnl.Com
-                        </a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mb-1">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thể Loại
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="./category.html">Tất Cả</a>
+                                <a class="dropdown-item" href="./category.html">Huyền Huyễn</a>
+                                <a class="dropdown-item" href="./category.html">Tiên Hiệp</a>
+                                <a class="dropdown-item" href="./category.html">Võng Du</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bảng Xếp Hạng
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="./ranking.html">Đọc Nhiều</a>
+                                <a class="dropdown-item" href="/ranking.html">Đánh Giá</a>
+                                <a class="dropdown-item" href="./ranking.html">Thảo Luận</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <button type="button" class="btn btn-info mr-1">Tủ Truyện</button>
+                    </li>
+
+
+                    <li class="nav-item mb-1">
+                        <button type="button" class="btn btn-danger mr-1">Đăng Truyện</button>
                     </li>
                 </ul>
-
-                <ul class="list-unstyled mb-0 ml-auto d-flex justify-content-center">
-                    <li>
-                        <a href="./homepage.html" class="d-block px-3 py-2">
-                            <!--Display block px = padding + left-->
-                            Đăng nhập
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./homepage.html" class="d-block px-3 py-2">
-                            Đăng ký
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-        <div class="header-content">
-            <!--Spacing trong boostrap-->
-            <div class="container d-flex align-items-center"><a href="./homepage.html" class="mr-auto pb-4 pt-3 ">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Microsoft_Groove_logo.png" alt="logo" height="40"></a>
-                <div class="d-flex">
+                <form class="d-flex">
                     <input type="text" name="text" placeholder="Tìm kiếm" class="form-control border-tertiary">
                     <button type="button" class="btn btn-outline-secondary search">
                         <a href="./search.html"><i class="fa fa-search"></i></a>
                     </button>
-                </div>
-
-                <ul class="d-flex list-unstyled ml-auto">
-                    <li class="px-1">
-                        <button type="button" class="btn btn-info">Tủ Truyện</button>
-                    </li>
-                </ul>
+                </form>
 
             </div>
-        </div>
+        </nav>
 
+
+
+        <!-- Thanh BXH Thể Loại
         <nav class="navbar navbar--main navbar-expand navbar-dark bg-secondary">
             <div class="container px-3">
                 <ul class="navbar-nav">
+                    <div class="row d-flex">
+                        <div class="col-8">
+                            <div class="navbar-nav mr-auto">
+                                <div class="dropdown mr-1">
 
-                    <div class="d-flex container px-3">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Thể Loại
+                                    </button>
 
-                        <div class="navbar-nav mr-auto">
-                            <div class="dropdown mr-1">
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                        <a class="dropdown-item" href="./category.html">Tất Cả</a>
+                                        <a class="dropdown-item" href="./category.html">Huyền Huyễn</a>
+                                        <a class="dropdown-item" href="./category.html">Tiên Hiệp</a>
+                                        <a class="dropdown-item" href="./category.html">Võng Du</a>
+                                    </div>
 
-                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                    Thể Loại
-                                </button>
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                    <a class="dropdown-item" href="./category.html">Tất Cả</a>
-                                    <a class="dropdown-item" href="./category.html">Huyền Huyễn</a>
-                                    <a class="dropdown-item" href="./category.html">Tiên Hiệp</a>
-                                    <a class="dropdown-item" href="./category.html">Võng Du</a>
                                 </div>
 
-                            </div>
+                                <div class="dropdown mr-1">
 
-                            <div class="dropdown mr-1">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Bảng Xếp Hạng
+                                    </button>
 
-                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                    Bảng Xếp Hạng
-                                </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                        <a class="dropdown-item" href="./ranking.html">Đọc Nhiều</a>
+                                        <a class="dropdown-item" href="/ranking.html">Đánh Giá</a>
+                                        <a class="dropdown-item" href="./ranking.html">Thảo Luận</a>
+                                    </div>
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                    <a class="dropdown-item" href="./ranking.html">Đọc Nhiều</a>
-                                    <a class="dropdown-item" href="/ranking.html">Đánh Giá</a>
-                                    <a class="dropdown-item" href="./ranking.html">Thảo Luận</a>
                                 </div>
-
                             </div>
 
                         </div>
-
-                        <div style="margin-left: 500px;">
-                            <ul class="navbar-nav ml-5">
-                                <li class="px-1 float-right">
-                                    <button type="button" class="btn btn-danger">Đăng Truyện</button>
-                                </li>
-                            </ul>
+                        <div class="col-4 d-flex">
+                            <button type="button" class="btn btn-info">Tủ Truyện</button>
+                            <button type="button" class="btn btn-danger" style="margin-left: 10px;">Đăng Truyện</button>
                         </div>
-
                     </div>
                 </ul>
 
             </div>
-        </nav>
+        </nav> -->
+
     </header>
 
     <div id="main-detail">
         <div class="detail-content">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
-                        <section class="picture-detail">
+                    <div class="col-xl-3 col-sm-12 col-lg-12">
+                        <section class="picture-detail" style="margin-left: 60px">
                             <img src="https://static.cdnno.com/poster/dao-gioi-thien-ha/300.jpg?t=1596525418" alt="truyen" class="shadow" align="left">
                         </section>
                     </div>
 
-                    <div class="col-9">
+                    <div class="col-xl-9 col-lg-10">
                         <section class="detail-name">
-                            <h4><a href="./detail.html">Đạo Giới Thiên Hạ </a>
+                            <h4><a href="./detail.html" style="margin:10px 0px 0px 60px;">Đạo Giới Thiên Hạ </a>
                                 <a href="./detail.html" style="margin-left: 10px;"><i class="far fa-flag"></i></a>
                             </h4>
                         </section>
@@ -137,32 +145,32 @@
                             <button type="button" class="btn btn-outline-primary">
                                 <a href="./category.html">Hồ Hưng</a>
                             </button>
-                            <button type="button" class="btn btn-outline-secondary">Đang Ra</button>
-                            <button type="button" class="btn btn-outline-success">Huyền Huyễn</button>
-                            <button type="button" class="btn btn-outline-danger">Đông Phương</button>
-                            <button type="button" class="btn btn-outline-warning">Bối Cảnh</button>
-                            <button type="button" class="btn btn-outline-info">Thể Loại</button>
+                            <button type="button" class="btn btn-outline-secondary mt-1">Đang Ra</button>
+                            <button type="button" class="btn btn-outline-success mt-1">Huyền Huyễn</button>
+                            <button type="button" class="btn btn-outline-danger mt-1">Đông Phương</button>
+                            <button type="button" class="btn btn-outline-warning mt-1">Bối Cảnh</button>
+                            <button type="button" class="btn btn-outline-info mt-1">Thể Loại</button>
                         </section>
 
                         <div class="list-unstyled">
                             <ul>
                                 <li class="d-flex">
-                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">2.1M</p>
-                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">1000</p>
-                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">199.2K</p>
-                                    <p style="margin: 30px 50px 0px 0px; font-weight: bolder;">79</p>
+                                    <p style="margin: 30px 40px 0px 0px; font-weight: bolder;">2.1M</p>
+                                    <p style="margin: 30px 40px 0px 0px; font-weight: bolder;">1000</p>
+                                    <p style="margin: 30px 40px 0px 0px; font-weight: bolder;">199.2K</p>
+                                    <p style="margin: 30px 40px 0px 0px; font-weight: bolder;">79</p>
                                 </li>
-                                <li class="d-flex">
-                                    <p style="margin: 0px 55px 0px 0px;">Chữ</p>
-                                    <p style="margin: 0px 36px 0px 0px;">Chương</p>
+                                <li class="d-flex small">
+                                    <p style="margin: 0px 53px 0px 0px;">Chữ</p>
+                                    <p style="margin: 0px 32px 0px 0px;">Chương</p>
                                     <p style="margin: 0px 33px 0px 0px;">Lượt Đọc</p>
-                                    <p style="margin: 0px 50px 0px 0px;">Đề Cử</p>
+                                    <p style="margin: 0px 0px 0px 0px;">Đề Cử</p>
 
                                 </li>
                             </ul>
                         </div>
 
-                        <div>
+                        <div style="margin-left: 40px;">
                             <p class="d-flex">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -174,25 +182,26 @@
                             </p>
                         </div>
 
-                        <button type="button" class="btn btn-success">Đọc Tiếp</button>
-                        <button type="button" class="btn btn-danger">Đánh Dấu</button>
-                        <button type="button" class="btn btn-warning">Đề Cử</button>
+                        <button type="button" class="btn btn-success ml-3">Đọc Tiếp</button>
+                        <button type="button" class="btn btn-danger ml-3">Đánh Dấu</button>
+                        <button type="button" class="btn btn-warning ml-3">Đề Cử</button>
                     </div>
                 </div>
 
                 <hr>
 
-                <div class="row">
-                    <button type="button" class="btn btn-outline-primary active" style="margin-right: 30px;">
+                <div class="row col-sm-12 col-xl-12">
+                    <button type="button" class="btn btn-outline-primary active mr-2 mt-1 col-sm-3 col-xl-2 col-lg-2 col-md-2">
                         <a href="./detail.html">Giới Thiệu</a>
                     </button>
-                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
-                        <a href="./detail.html">Đánh Giá</a>
-                    </button>
-                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
+                    <button type="button" class="btn btn-outline-dark mr-2 mt-1 col-sm-3 col-xl-2 col-lg-3">
                         <a href="./detail.html">Danh Sách Chương</a>
                     </button>
-                    <button type="button" class="btn btn-outline-dark" style="margin-right: 30px;">
+                    <button type="button" class="btn btn-outline-dark mr-2 mt-1 col-sm-3 col-xl-2 col-lg-2">
+                        <a href="./detail.html">Đánh Giá</a>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-dark mr-2 mt-1 col-sm-3 col-xl-2 col-lg-2">
                         <a href="./detail.html">Bình Luận</a>
                     </button>
                 </div>
@@ -200,8 +209,8 @@
 
                 <div class="row">
 
-                    <div class="col-9">
-                        <div class="review row">
+                    <div class="col-xl-8 col-md-8">
+                        <div class="review row mr-3 ml-1">
                             Giới Thiệu Truyện
                             <br>
                             <br>
@@ -229,16 +238,16 @@
                             <div class="list-inline-item d-block">
                                 <p>
                                     <span class="font-weight-bold">Cảm Xúc</span>
-                                    <span style="margin-left: 80px;">
+                                    <span style="margin-left: 20px;">
                                         <i class="far fa-kiss-wink-heart"></i>10
                                     </span>
-                                    <span style="margin-left: 30px;">
+                                    <span style="margin-left: 20px;">
                                         <i class="far fa-thumbs-up"></i>20
                                     </span>
-                                    <span style="margin-left: 30px;">
+                                    <span style="margin-left: 20px;">
                                         <i class="far fa-angry"></i>30
                                     </span>
-                                    <span style="margin-left: 30px;">
+                                    <span style="margin-left: 20px;">
                                         <i class="far fa-sad-cry"></i>40
                                     </span>
                                 </p>
@@ -249,7 +258,7 @@
                             <div class="list-inline-item d-block">
                                 <p>
                                     <span class="font-weight-bold">Đề Cử</span>
-                                    <span style="margin-left: 98px;">
+                                    <span style="margin-left: 40px;">
                                         <i class="fab fa-canadian-maple-leaf"></i>10
                                     </span>
 
@@ -264,12 +273,12 @@
                             <div class="list-inline-item d-block">
                                 <p>
                                     <span class="font-weight-bold">Chương Mới</span>
-                                    <span style="margin-left: 50px;">
+                                    <span class="small" style="margin-left: 50px;">
                                         <a href="./detail.html">
                                             Chương 1000: Nhóm 08 - Web</a>
                                     </span>
 
-                                    <span class="float-right">
+                                    <span class="float-right small">
                                         30 phút trước
                                     </span>
                                 </p>
@@ -278,10 +287,10 @@
                         <hr>
                     </div>
 
-                    <div id="detail-info-manager" class="col-3">
+                    <div id="detail-info-manager" class="col-xl-3 col-sm-12 ml-5 col-lg-3 col-md-3">
 
-                        <div class="row">
-                            <div class="messi-circle">
+                        <div class="row d-flex justify-content-center">
+                            <div class="messi-circle ">
                                 <img src="https://www.freepngimg.com/thumb/doraemon/71299-nobi-youtube-nobita-television-doraemon-free-photo-png-thumb.png">
                             </div>
                         </div>
@@ -325,7 +334,7 @@
                             </div>
                             <div class="content-search-tg">
                                 <br>
-                                <a href="#"><i class="far fa-id-badge" style="margin-left: 20px;"></i>Hồ Hưng</a>
+                                <a href="#"><i class="far fa-id-badge ml-1"></i>Hồ Hưng</a>
                                 <span class="small px-2 ml-4">
                                     <i class="fas fa-bars"></i>
                                     80 Chương
@@ -340,18 +349,17 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer col-xl-12 col-md-12 col-sm-12 col-lg-12 col-12">
         <div class="card text-center">
             <div class="card-header">
             </div>
-
             <div class="card-body">
                 <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
                 <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
                 <a href="#" class="btn btn-primary">Trang Chủ</a>
             </div>
 
-            <div class="card-footer text-muted">
+            <div class="card-footer">
                 Được thực hiện bởi nhóm 8 - &copy 2010-2020
             </div>
         </div>
