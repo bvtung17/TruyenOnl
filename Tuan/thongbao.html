@@ -1,82 +1,175 @@
 <!DOCTYPE html>
-<header>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Tuan_css.css">
-</header>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Truyện Online</title>
+</head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row bg-title">
-            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <h4 class="page-title">THÔNG BÁO</h4>
-            </div>
-            <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                        <a href="#">Quản lý</a>
-                    </li>
-                    <li class="breadcrumb-item active">
-                        Thông báo
-                    </li>
-                </ol>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Truyện Onl </div>
+            <div class="list-group list-group-flush">
+                <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="far fa-address-book"></i>Profile User - Chức Năng
+                    <div class="collapse" id="collapseExample">
+                        <a href="#" class="list-group-item list-group-item-action">Hồ Sơ</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tài Sản</a>
+                        <a href="#" class="list-group-item list-group-item-action">Nhận Thưởng</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tin Nhắn</a>
+                        <a href="#" class="list-group-item list-group-item-action">Thông Báo</a>
+                        <a href="#" class="list-group-item list-group-item-action">Cài Đặt</a>
+                        <a href="#" class="list-group-item list-group-item-action">Lịch Sử Thanh Toán</a>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fab fa-accusoft"></i>Tủ Truyện Của Tôi</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book-open"></i>Thêm Truyện Mới</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book"></i>Truyện Đã Đăng</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-sign-out-alt"></i>Thoát</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-question"></i>Các Câu Hỏi Thường Gặp</a>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="white-box">
 
-                    <div class="m-b-20 p-r-10">
-                        <p><strong>
-                        Thông báo
-                        <span class="small m-t-10 pull-right">
-                        <a href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                            <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                          </svg></a>
-                        </span>
-                       </strong></p>
+        <!-- /#sidebar-wrapper -->
 
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i>Thông Báo<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-comment-alt"></i></i>Tin Nhắn</a>
+                        </li>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm Truyện" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title" style="">Quản Lý Truyện</h4>
                     </div>
-                    <div>
-                        <table id="notificationTable" class="table" cellspacing="14">
-                            <tbody>
-                                <tr data-id="540198" class="notification-item advance-table-row">
-                                    <td width="10"></td>
-                                    <td width="40">
-                                        <a href="#" targe="_blank"><img src="anhcogai.jpg" class="img-circle" width="60"></a>
-                                    </td>
-                                    <td class="notification-item__link" data-id="540198" data-url=""><h6>Chào mừng bạn tham gia nhóm Tác Giả của truyen.onl. Vui lòng đọc kỹ Staff's Guide trước khi đăng truyện và đặt câu hỏi<br><h6 class="text-muted">17 giờ trước</h6></h6>
-                                    </td>
-                                    <td width="100px">
-                                        <a href="#" class="wrap-setting-turnoff">
-                                            <span class="toggle-more">
-                                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                                              </svg></span>
-
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <p class="text-center">
-                            <button id="btnLoadMoreNotification" class="col-md-4 col-md-offset-4 btn btn-default">HIỂN THỊ THÊM</button>
-                        </p>
-                        <div class="clearfix"></div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb" style="background-color:rgb(252, 252, 252);">
+                            <li class="breadcrumb-item ml-auto"><a href="https://pub.truyen.onl" style="">Quản lý</a></li>
+                            <li class="breadcrumb-item active">Danh sách truyện</li>
+                        </ol>
                     </div>
-
-
                 </div>
 
+                <div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Thông Báo</th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td colspan="3">ABC</td>
+                            </tr>
 
-
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            <footer>
+                <div class="card text-center">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                        <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                        <a href="#" class="btn btn-primary">Trang Chủ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        Được thực hiện bởi nhóm 8 - &copy 2010-2020
+                    </div>
+                </div>
+            </footer>
         </div>
+        <!-- /#page-content-wrapper -->
     </div>
-    </div>
-    </div>
+    <!-- /#wrapper -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
 </body>
+
+</html>
