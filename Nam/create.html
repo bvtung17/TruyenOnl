@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Truyện Online</title>
+</head>
+
+<body>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Truyện Onl </div>
+            <div class="list-group list-group-flush">
+                <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="far fa-address-book"></i>Profile User - Chức Năng
+                    <div class="collapse" id="collapseExample">
+                        <a href="#" class="list-group-item list-group-item-action">Hồ Sơ</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tài Sản</a>
+                        <a href="#" class="list-group-item list-group-item-action">Nhận Thưởng</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tin Nhắn</a>
+                        <a href="#" class="list-group-item list-group-item-action">Thông Báo</a>
+                        <a href="#" class="list-group-item list-group-item-action">Cài Đặt</a>
+                        <a href="#" class="list-group-item list-group-item-action">Lịch Sử Thanh Toán</a>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fab fa-accusoft"></i>Tủ Truyện Của Tôi</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book-open"></i>Thêm Truyện Mới</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book"></i>Truyện Đã Đăng</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-sign-out-alt"></i>Thoát</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-question"></i>Các Câu Hỏi Thường Gặp</a>
+
+            </div>
+        </div>
+
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i>Thông Báo<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-comment-alt"></i></i>Tin Nhắn</a>
+                        </li>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm Truyện" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container-fluid mt-1">
+                <div class="main-content row">
+                    <div class="col-xl-8 col-md-12 col-sm-12 col-lg-12 col-12">
+                        <div>
+                            <nav aria-label="breadcrumb">
+                                <section>
+                                    <h2 style="font-size: 1.25rem; margin: 10px;">Đăng truyện sáng tác</h2>
+                                </section>
+                            </nav>
+
+                            <form>
+                                <div>
+                                    <input type="hidden" value="2" name="kind">
+                                    <div class="form-group">
+                                        <label class="col-sm-12">Ảnh bìa</label>
+                                        <div class="col-sm-12">
+                                            <label class="text-danger hidden" style="display: block" id="error-image-poster"></label>
+
+                                            <img>
+                                            </br>
+                                            <input class="file-image hidden" type="file" accept=".jpg,.png,.jpeg">
+                                            </br>
+                                            <span class="help-block"><small>Chấp nhận ảnh JPG, JPEG, nặng không quá 2MB.</small></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="col-sm-12 col-md-12 col-xl-12">
+                                <form>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="exampleFormControlInput1">Tên truyện</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tên Truyện">
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="exampleFormControlSelect1">Phân loại</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Truyện nam</option>
+                                            <option>Truyện nữ</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="exampleFormControlSelect2">Thể loại</label>
+                                        <select class="form-control" id="exampleFormControlSelect2">
+                                            <option>Kỳ ảo</option>
+                                            <option>Huyền Huyễn</option>
+                                            <option>Võng Du</option>
+                                            <option>Tiên Hiệp</option>
+                                            <option>Lịch sử</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="exampleFormControlTextarea1">Giới thiệu</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea3" rows="5"
+                                            placeholder="Tối đa 4000 ký tự. Tóm tắt cho truyện không nên quá dài mà nên ngắn gọn, tập trung, thú vị. Phần này rất quan trọng vì nó quyết định độc giả có đọc hay không."></textarea>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <p><em>Bên dưới là các Nhãn (tag) cho truyện, với mỗi loại nhãn, chỉ được chọn một giá trị, vui lòng xem và chọn Nhãn kỹ lưỡng. Nếu nhãn muốn thêm chưa có trong danh sách, vui lòng liên hệ quản trị viên ở
+                                                mục liên hệ.</em></p>
+                                    </div>
+                                    <div class="form-group col-md-12 col-sm-12">
+                                        <label for="exampleFormControlSelect1">Nhãn</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>Chọn một</option>
+                                            <optgroup label="Tính cách nhân vật">
+                                                <option value="1">Điềm Đạm</option>
+                                                <option value="2">Nhiệt Huyết</option>
+                                                <option value="3">Cơ Trí</option>
+                                            </optgroup>
+                                            <optgroup label="Bối cảnh thế giới">
+                                                <option value="4">Hiện Đại</option>
+                                                <option value="5">Lịch sử Thần Thoại</option>
+                                                <option value="6">Cổ Điển Tiên Hiệp</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-4 col-sm-12 col-md-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="text-center">Hướng dẫn</ol>
+
+                        </nav>
+
+                        <div class="row ml-auto">
+                            <h6>
+                                <a href="#">Hướng dẫn 1</a>
+                                <br>
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="row ml-auto">
+                            <h6>
+                                <a href="#">Hướng dẫn 2</a>
+                                <br>
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="row ml-auto">
+                            <h6>
+                                <a href="#">Hướng dẫn 3</a>
+                                <br>
+                            </h6>
+                            <br>
+                        </div>
+                        <div class="row ml-auto">
+                            <h6>
+                                <a href="#">Hướng dẫn 4</a>
+                                <br>
+                            </h6>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer>
+                <div class="card text-center">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                        <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                        <a href="#" class="btn btn-primary">Trang Chủ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        Được thực hiện bởi nhóm 8 - &copy 2010-2020
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
+</body>
+
+</html>

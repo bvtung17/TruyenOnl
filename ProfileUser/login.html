@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./nghia.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./responsive.css"> -->
+    <title>Truyện Online</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
+            <a class="navbar-brand" href="#" style="margin-right: 50px;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Microsoft_Groove_logo.png" alt="logo" height="40">
+                TruyenOnl
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mb-1">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thể Loại
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="./category.html">Tất Cả</a>
+                                <a class="dropdown-item" href="./category.html">Huyền Huyễn</a>
+                                <a class="dropdown-item" href="./category.html">Tiên Hiệp</a>
+                                <a class="dropdown-item" href="./category.html">Võng Du</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item mb-1">
+                        <div class="dropdown mr-1">
+                            <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bảng Xếp Hạng
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                <a class="dropdown-item" href="./ranking.html">Đọc Nhiều</a>
+                                <a class="dropdown-item" href="/ranking.html">Đánh Giá</a>
+                                <a class="dropdown-item" href="./ranking.html">Thảo Luận</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-1">
+                        <button type="button" class="btn btn-info mr-1">Tủ Truyện</button>
+                    </li>
+
+
+                    <li class="nav-item mb-1">
+                        <button type="button" class="btn btn-danger mr-1">Đăng Truyện</button>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" name="text" placeholder="Tìm kiếm" class="form-control border-tertiary">
+                    <button type="button" class="btn btn-outline-secondary search">
+                        <a href="./search.html"><i class="fa fa-search"></i></a>
+                    </button>
+                </form>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="main-login">
+        <div class="container" style="width: 300px;">
+            <form>
+                <br>
+                "Nếu bạn chưa có tài khoản, hãy tiến hành đăng ký"
+                <br>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nhập địa chỉ Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nhập địa chỉ Email">
+                    <small id="emailHelp" class="form-text text-muted">Chúng tôi sẽ không bao giờ chia sẻ thông tin của bạn cho bất kỳ ai</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Mật khẩu</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật Khẩu">
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Nhớ tài khoản</label>
+                    <a href="#quenmatkhau" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn btn-info btn-lg btn-block">Đăng Nhập</button>
+                <br>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
+                        <div class="social">
+
+                            <a href="dangnhapgoogle" class="btn btn-googleplus" data-toggle="tooltip" title="" data-original-title="Đăng nhập bằng Google"> Google+ <i aria-hidden="true" class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group m-b-0">
+                    <div class="col-sm-12 text-center">
+                        <p>Bạn chưa có tài khoản? <a href="./registrantion.html" class="text-primary m-l-5"><b>Đăng Ký</b></a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="card text-center">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                <a href="#" class="btn btn-primary">Trang Chủ</a>
+            </div>
+
+            <div class="card-footer">
+                Được thực hiện bởi nhóm 8 - &copy 2010-2020
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>

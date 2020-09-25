@@ -11,272 +11,358 @@
 </head>
 
 <body>
-    <div id="page-wrapper">
-        <div class="container">
-            <div class="row bg-title">
-                <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                    <h4 class="page-title" style="">Quản Lý Truyện</h4>
-                </div>
-                <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
-                    <ol class="breadcrumb" style="background-color:rgb(252, 252, 252);">
-                        <li class="breadcrumb-item ml-auto"><a href="https://pub.truyen.onl" style="">Quản lý</a></li>
-                        <li class="breadcrumb-item active">Danh sách truyện</li>
-                    </ol>
-                </div>
+
+    <div class="d-flex" id="wrapper">
+
+        <!-- Sidebar -->
+        <div class="bg-light border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Truyện Onl </div>
+            <div class="list-group list-group-flush">
+                <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <i class="far fa-address-book"></i>Profile User - Chức Năng
+                    <div class="collapse" id="collapseExample">
+                        <a href="#" class="list-group-item list-group-item-action">Hồ Sơ</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tài Sản</a>
+                        <a href="#" class="list-group-item list-group-item-action">Nhận Thưởng</a>
+                        <a href="#" class="list-group-item list-group-item-action">Tin Nhắn</a>
+                        <a href="#" class="list-group-item list-group-item-action">Thông Báo</a>
+                        <a href="#" class="list-group-item list-group-item-action">Cài Đặt</a>
+                        <a href="#" class="list-group-item list-group-item-action">Lịch Sử Thanh Toán</a>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fab fa-accusoft"></i>Tủ Truyện Của Tôi</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book-open"></i>Thêm Truyện Mới</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-book"></i>Truyện Đã Đăng</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-sign-out-alt"></i>Thoát</a>
+                <a href="#" class="list-group-item list-group-item-action bg-light"><i class="fas fa-question"></i>Các Câu Hỏi Thường Gặp</a>
+
             </div>
+        </div>
 
-            <div class="col-sm-12 bg-content">
-                <div class="white-box">
-                    <ul class="nav nav-tabs d-flex justify-content-center">
-                        <li class="active" style="margin-right: 30px;">
-                            <a href="#ongoing" data-toggle="tab">
-                                <span>Đang ra (3)</span>
-                            </a>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <button class="btn btn-primary" id="menu-toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-bell"></i>Thông Báo<span class="sr-only">(current)</span></a>
                         </li>
-                        <li>
-                            <a href="#complete" data-toggle="tab" style="margin-right: 30px;">
-                                <span>Hoàn thành (11)</span>
-                            </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-comment-alt"></i></i>Tin Nhắn</a>
                         </li>
-                        <li>
-                            <a href="#waiting" data-toggle="tab" style="margin-right: 30px;">
-                                <span>Chờ xuất bản (0)</span>
-                            </a>
-                        </li>
+
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Tìm Kiếm Truyện" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+
                     </ul>
+                </div>
+            </nav>
 
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="ongoing">
-                            <div>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Truyện</th>
-                                            <th>Chương mới nhất</th>
-                                            <th width="200">Thao tác</th>
-                                        </tr>
-                                    </thead>
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title" style="">Quản Lý Truyện</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb" style="background-color:rgb(252, 252, 252);">
+                            <li class="breadcrumb-item ml-auto"><a href="https://pub.truyen.onl" style="">Quản lý</a></li>
+                            <li class="breadcrumb-item active">Danh sách truyện</li>
+                        </ol>
+                    </div>
+                </div>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                <div class="col-sm-12 bg-content">
+                    <div class="white-box">
+                        <ul class="nav nav-tabs d-flex justify-content-center">
+                            <li class="active" style="margin-right: 30px;">
+                                <a href="#ongoing" data-toggle="tab">
+                                    <span>Đang ra (3)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#complete" data-toggle="tab" style="margin-right: 30px;">
+                                    <span>Hoàn thành (11)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#waiting" data-toggle="tab" style="margin-right: 30px;">
+                                    <span>Chờ xuất bản (0)</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="ongoing">
+                                <div>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Truyện</th>
+                                                <th>Chương mới nhất</th>
+                                                <th width="200">Thao tác</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="./quanlytruyenChinhSua.html" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                        </div>
 
-                        <div role="tabpanel" class="tab-pane " id="complete">
-                            <div class="table-responsive">
+                            <div role="tabpanel" class="tab-pane " id="complete">
+                                <div class="table-responsive">
+                                    <table class="table table-hover manage-u-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Truyện</th>
+                                                <th>Chương mới nhất</th>
+                                                <th width="200">Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
+                                                    <p class="small">Minh Nguyệt Địa Thượng Sương</p>
+                                                </td>
+                                                <td>
+                                                    <a href="#">Chương 594: Cốt Thi Vương...</a>
+                                                    <p class="small">2020-09-23 21:10:01</p>
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">T</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">S</a>
+                                                    </button>
+                                                    <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
+                                                        <a href="#" target="_blank">X</a>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div role="tabpanel" class="tab-pane " id="waiting">
+
                                 <table class="table table-hover manage-u-table">
                                     <thead>
                                         <tr>
                                             <th>Truyện</th>
                                             <th>Chương mới nhất</th>
+                                            <th>Tình trạng</th>
                                             <th width="200">Thao tác</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">X</a>
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <a href="#" target="_blank">Ta Thật Không Phải Là Tiên Nhị Đại Ta Thật Không Phải Là Tiên Nhị Đại</a>
-                                                <p class="small">Minh Nguyệt Địa Thượng Sương</p>
-                                            </td>
-                                            <td>
-                                                <a href="#">Chương 594: Cốt Thi Vương...</a>
-                                                <p class="small">2020-09-23 21:10:01</p>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-primary btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">T</a>
-                                                </button>
-                                                <button type="button" class="btn btn-warning btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">S</a>
-                                                </button>
-                                                <button type="button" class="btn btn-info btn-circle btn-md m-r-5" data-toggle="tooltip">
-                                                    <a href="#" target="_blank">X</a>
-                                                </button>
-                                            </td>
+                                            <td class="text-center" colspan="4"><strong>Không có dữ liệu</strong></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
                         </div>
-
-                        <div role="tabpanel" class="tab-pane " id="waiting">
-
-                            <table class="table table-hover manage-u-table">
-                                <thead>
-                                    <tr>
-                                        <th>Truyện</th>
-                                        <th>Chương mới nhất</th>
-                                        <th>Tình trạng</th>
-                                        <th width="200">Thao tác</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center" colspan="4"><strong>Không có dữ liệu</strong></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
 
+            </div>
+            <footer>
+                <div class="card text-center">
+                    <div class="card-header">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                        <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                        <a href="#" class="btn btn-primary">Trang Chủ</a>
+                    </div>
+
+                    <div class="card-footer">
+                        Được thực hiện bởi nhóm 8 - &copy 2010-2020
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
 
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function (e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
+
 </body>
 
 </html>
