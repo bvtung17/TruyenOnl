@@ -1,11 +1,15 @@
 ﻿<Properties StartupConfiguration="{F37ABC76-33EF-4823-8DFA-9309B589B458}|Default">
   <MonoDevelop.Ide.ItemProperties.TruyenOnl PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TruyenOnl/Views/Home/Index.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TruyenOnl/Models/Book.cs">
     <Files>
       <File FileName="TruyenOnl/Views/User/Login.cshtml" Line="45" Column="7" />
-      <File FileName="TruyenOnl/Views/User/Register.cshtml" Line="36" Column="7" />
-      <File FileName="TruyenOnl/Views/Shared/_Layout.cshtml" Line="80" Column="79" />
-      <File FileName="TruyenOnl/Views/Home/Index.cshtml" Line="79" Column="25" />
+      <File FileName="TruyenOnl/Views/User/Register.cshtml" />
+      <File FileName="TruyenOnl/Views/Shared/_Layout.cshtml" />
+      <File FileName="TruyenOnl/Views/Home/Index.cshtml" />
+      <File FileName="TruyenOnl/Controllers/BookController.cs" />
+      <File FileName="TruyenOnl/Models/Book.cs" Line="15" Column="1" />
+      <File FileName="TruyenOnl/Views/Home/Truyen.cshtml" Line="1" Column="1" />
+      <File FileName="TruyenOnl/Controllers/HomeController.cs" Line="48" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,18 +23,16 @@
                 </Node>
               </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Book.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
+                <Node name="Book" expanded="True" />
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
                 <Node name="User" expanded="True" />
               </Node>
             </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="ClassPad">
-        <State name="__root__">
-          <Node name="TruyenOnl" expanded="True" selected="True">
-            <Node name="TruyenOnl" expanded="True" />
           </Node>
         </State>
       </Pad>

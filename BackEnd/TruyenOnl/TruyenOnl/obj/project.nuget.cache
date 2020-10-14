@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Wfv09Wef48KVUAhb0XtF5j6uPJHduhyt47WBiy/IKOBEkxdj5Vq8cJBBNidnBw/W49p1B+e/tpJe3lSKvWbz7g==",
+  "dgSpecHash": "5HbKaOXmmoaq3ubdG31nZtqFATThdCHDOrOeBI3XziLIwDm/8i4uKp1qbeeszQqC3ur+J9ZLjMjEJ+/U3UGRDA==",
   "success": true,
-  "projectFilePath": "/Users/apple/Downloads/IT_CNPM/C#/Web Developer C7/TeamWork/FullProject/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
+  "projectFilePath": "/Users/apple/Downloads/IT_CNPM/C#/Web_Developer_C7/TeamWork/HTML_Project/TruyenOnl/TruyenOnlWeb/BackEnd/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
   "expectedPackageFiles": [
     "/Users/apple/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.9/microsoft.aspnetcore.cryptography.internal.3.1.9.nupkg.sha512",
     "/Users/apple/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.9/microsoft.aspnetcore.cryptography.keyderivation.3.1.9.nupkg.sha512",

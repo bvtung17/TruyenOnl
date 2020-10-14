@@ -39,13 +39,13 @@ namespace TruyenOnl.Controllers
             return View();
         }
 
-        [Route("Truyen")]
+        [Route("Home/Truyen")]
         public IActionResult Truyen()
         {
             return View();
         }
 
-        [Route("Truyen/Reading")]
+        [Route("Home/Truyen/Reading")]
         public IActionResult Reading()
         {
             return View();

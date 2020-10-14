@@ -9113,17 +9113,17 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/apple/Downloads/IT_CNPM/C#/Web Developer C7/TeamWork/FullProject/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
+      "projectUniqueName": "/Users/apple/Downloads/IT_CNPM/C#/Web_Developer_C7/TeamWork/HTML_Project/TruyenOnl/TruyenOnlWeb/BackEnd/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
       "projectName": "TruyenOnl",
-      "projectPath": "/Users/apple/Downloads/IT_CNPM/C#/Web Developer C7/TeamWork/FullProject/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
+      "projectPath": "/Users/apple/Downloads/IT_CNPM/C#/Web_Developer_C7/TeamWork/HTML_Project/TruyenOnl/TruyenOnlWeb/BackEnd/TruyenOnl/TruyenOnl/TruyenOnl.csproj",
       "packagesPath": "/Users/apple/.nuget/packages/",
-      "outputPath": "/Users/apple/Downloads/IT_CNPM/C#/Web Developer C7/TeamWork/FullProject/TruyenOnl/TruyenOnl/obj/",
+      "outputPath": "/Users/apple/Downloads/IT_CNPM/C#/Web_Developer_C7/TeamWork/HTML_Project/TruyenOnl/TruyenOnlWeb/BackEnd/TruyenOnl/TruyenOnl/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/apple/.nuget/NuGet/NuGet.Config"
+        "/Users/apple/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"

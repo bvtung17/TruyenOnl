@@ -13,9 +13,6 @@ namespace TruyenOnl.Data.Entities
         public int ViewCount { get; set; }
         public DateTime DateCreated { get; set; }
 
-        public string ImagePath { get; set; }
-        public IFormFile UploadImage { get; set; }
-
         public int Rating { get; set; }
         public string Review { get; set; }
         public string Author { get; set; }
