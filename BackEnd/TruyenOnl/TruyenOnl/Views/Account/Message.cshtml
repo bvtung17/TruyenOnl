@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutBook.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row banner">
+        <div class="col-12 mt-3">
+            <h4>Người dùng</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row chat">
+        <div class="col-lg-2 col-md-4 col-sm-12 col-xs-12">
+            <div class="search-chat">
+                <input type="text" name="text" placeholder="Tìm kiếm" class="form-control">
+            </div>
+
+            <div class="list-group mt-2">
+                <button type="button" class="list-group-item list-group-item-action btn-outline-info text-justify text-center ">
+                    Lão đại
+                </button>
+                <button type="button" class="list-group-item list-group-item-action btn-outline-info text-justify text-center">
+                    Boss
+                </button>
+                <button type="button" class="list-group-item list-group-item-action btn-outline-info text-justify text-center">
+                    Bot
+                </button>
+                <button type="button" class="list-group-item list-group-item-action btn-outline-info text-justify text-center">
+                    Em
+                </button>
+                <button type="button" class="list-group-item list-group-item-action btn-outline-info text-justify text-center">
+                    Anh
+                </button>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-8 col-sm-12 col-xs-12">
+            <div class="name-chat">
+                <h6>Lão đại</h6>
+            </div>
+            <hr>
+            <div class="box-chat">
+                <ul id="messageList" class="char-list slimscroll p-t-30"></ul>
+            </div>
+            <hr>
+            <div class="message-chat">
+                <textarea id="massageContent" class="form-control" placeholder="Nhập nội dung tin nhắn"></textarea>
+                <button type="button" class="btn btn-danger mt-2">Gửi</button>
+            </div>
+        </div>
+    </div>
+</div>
