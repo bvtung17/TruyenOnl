@@ -1,0 +1,123 @@
+﻿@model IEnumerable<TruyenOnl.Models.Chapter>
+
+@{
+    Layout = "~/Views/Shared/_LayoutBook.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row bg-title">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+            <h4 class="page-title" style="">Quản Lý Truyện</h4>
+        </div>
+        <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+            <ol class="breadcrumb" style="background-color:rgb(252, 252, 252);">
+                <li class="breadcrumb-item ml-auto"><a href="#" style="">Quản lý</a></li>
+                <li class="breadcrumb-item active">
+                    @foreach (var item in Model)
+                    {
+                        @if (item.BookId == item.Book.Id)
+                        {
+                            @Html.DisplayFor(modelItem => item.Book.Name)
+                        }
+                        break;
+                    }
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="white-box">
+                <div>
+                    <nav>
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-dark m-1" href="~/Book/EditBook">Chỉnh Sửa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-dark m-1" href="~/Book/ChapterList">Danh Sách Chương</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-dark m-1" href="~/Book/CreateChapter">Thêm Chương</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-dark m-1" href="~/Book/statistic">Thống Kê</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 bg-content">
+            <div class="white-box">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="btn btn-success mt-2 mb-3">
+
+                        Đã Đăng                  
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div>
+                        <form class="input-group input-group-sm">
+                            <input type="number" class="form-control" name="index" value="" placeholder="Tìm STT">
+                            <span class="input-group-btn">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </span>
+                        </form>
+                        <form>
+                            <div>
+                                <table class="table table-hover manage-u-table">
+                                    <thead>
+                                        <tr>
+                                            <th width="20"><input type="checkbox" id="checkAllChapter"></th>
+                                            <th width="30" class="text-center">STT</th>
+                                            <th>Tên chương</th>
+                                            <th>Ngày xuất bản</th>
+                                            <th>Tên Sách</th>
+                                            <th width="150">Thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in Model)
+                                        {
+                                            <tr>
+                                                <td><input type="checkbox"></td>
+                                                <td class="text-center">@Html.DisplayFor(modelItem => item.STT)</td>
+                                                <td><a href="#">@Html.DisplayFor(modelItem => item.Name)</a></td>
+                                                <td>@Html.DisplayFor(modelItem => item.DateCreated)</td>
+                                                <td>@Html.DisplayFor(modelItem => item.Book.Name)</td>
+                                                <td>
+                                                    <a href="#" type="button" class="btn btn-warning btn-outline btn-circle btn-xs m-r-5">Sửa</a>
+                                                    <button type="button" class="btn btn-danger btn-outline btn-circle btn-xs m-r-5">Xóa</button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="pagination" role="navigation">
+                                <li class="page-item disabled " aria-disabled="true">
+                                    <span class="page-link" aria-hidden="true">‹</span>
+                                </li>
+                                <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">20</a></li>
+                                <li class="page-item disabled " aria-disabled="true">
+                                    <span class="page-link" aria-hidden="true">></span>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn waves-effect waves-light btn-danger">Xóa Đã Chọn</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿<Properties StartupConfiguration="{F37ABC76-33EF-4823-8DFA-9309B589B458}|Default">
+  <MonoDevelop.Ide.ItemProperties.TruyenOnl PreferredExecutionTarget="/Applications/Microsoft Edge.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TruyenOnl/Views/Book/EditBook.cshtml">
+    <Files>
+      <File FileName="TruyenOnl/Views/User/Login.cshtml" Line="45" Column="7" />
+      <File FileName="TruyenOnl/Views/User/Register.cshtml" />
+      <File FileName="TruyenOnl/Views/Shared/_Layout.cshtml" />
+      <File FileName="TruyenOnl/Views/Home/Index.cshtml" />
+      <File FileName="TruyenOnl/Controllers/BookController.cs" Line="69" Column="38" />
+      <File FileName="TruyenOnl/Models/Book.cs" Line="15" Column="1" />
+      <File FileName="TruyenOnl/Views/Home/Truyen.cshtml" />
+      <File FileName="TruyenOnl/Controllers/HomeController.cs" />
+      <File FileName="TruyenOnl/Controllers/BoookkController.cs" Line="29" Column="57" />
+      <File FileName="TruyenOnl/Views/Boookk/Create.cshtml" Line="66" Column="19" />
+      <File FileName="TruyenOnl/Views/Book/CreateBook.cshtml" Line="63" Column="1" />
+      <File FileName="TruyenOnl/Views/Boookk/Index.cshtml" Line="45" Column="13" />
+      <File FileName="TruyenOnl/Views/Book/Index.cshtml" Line="66" Column="85" />
+      <File FileName="TruyenOnl/Views/Book/ChapterList.cshtml" Line="99" Column="42" />
+      <File FileName="TruyenOnl/Controllers/ChappterrController.cs" Line="73" Column="8" />
+      <File FileName="TruyenOnl/Views/Chappterr/Index.cshtml" Line="49" Column="61" />
+      <File FileName="TruyenOnl/Views/Chappterr/Create.cshtml" Line="15" Column="13" />
+      <File FileName="TruyenOnl/Views/Book/CreateChapter.cshtml" Line="19" Column="11" />
+      <File FileName="TruyenOnl/Views/Shared/_LayoutBook.cshtml" Line="34" Column="32" />
+      <File FileName="TruyenOnl/Views/Chappterr/Delete.cshtml" Line="1" Column="1" />
+      <File FileName="TruyenOnl/Views/Chappterr/Edit.cshtml" Line="1" Column="1" />
+      <File FileName="TruyenOnl/Views/Book/EditBook.cshtml" Line="64" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TruyenOnl" expanded="True">
+            <Node name="TruyenOnl" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Book" expanded="True">
+                  <Node name="EditBook.cshtml" selected="True" />
+                </Node>
+                <Node name="Chappterr" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="User" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
