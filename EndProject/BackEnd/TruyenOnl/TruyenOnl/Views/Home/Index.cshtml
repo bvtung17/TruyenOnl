@@ -1,0 +1,622 @@
+﻿<div id="main">
+    <div class="container">
+
+        <div class="main-content row">
+
+            <div class="col-xl-8 col-sm-12 col-md-12 col-lg-8">
+
+                <section>
+                    <h5>Biên tập viên đề cử</h5>
+                </section>
+
+                @for (int i = 0; i < 3; i++)
+                {
+    <div class="row">
+        @for (int j = 0; j < 2; j++)
+        {
+<div class="col-xl-6 mt-3 col-sm-12">
+    <section class="picture-btv">
+        <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg" alt="truyen" class="shadow" align="left">
+    </section>
+
+    <section class="content-btv">
+        <h4>
+            <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+        </h4>
+        <div class="content-btv-gt">
+            Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+            đồ đệ
+            Kiếm Ma một lời không hợp liền
+            khai sát giới. . .
+            Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+            Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+            Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+        </div>
+        <div class="content-btv-tg">
+            <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+            <span class="border border-info small px-2 bg-info ml-4">
+                Huyền Huyễn
+            </span>
+        </div>
+    </section>
+</div>          }
+
+    </div>  }
+            </div>
+
+            <div class="col-xl-4 col-sm-12 col-md-12 col-lg-4">
+                <section class="">
+                    <h2 style="font-size: 1.25rem; margin: 10px 0px 25px 0px;">Đang đọc</h2>
+                </section>
+
+                @for (int i = 0; i < 4; i++)
+                {
+    <div class="row ml-auto">
+        <section class="picture-reading">
+            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg" alt="truyen" class="shadow" align="left">
+        </section>
+        <h6>
+            <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+            <br>
+            <button type="button" class="close" aria-label="Close" style="margin-left: 150px;">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <br>
+            <p>
+                Đã đọc: 1
+            </p>
+        </h6>
+        <br>
+    </div>}
+                <section class="ml-auto">
+                    <h5>Hướng dẫn</h5>
+                </section>
+
+                <div class="ml-auto">
+                    <ul>
+                        <li>
+                            <a href="#">Hướng dẫn đọc truyện nè bạn à 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn đọc truyện nè bạn à 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Hướng dẫn đọc truyện nè bạn à 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-update">
+            <div class="row">
+                <div class="col-xl-12 col-sm-12  col-xs-12 col-md-12 col-lg-12 d-flex">
+                    <h5>Mới Cập Nhật</h5>
+                    <h6 class="ml-auto" style="margin-right: 100px!important;">
+                        <a href="#">Xem Tất Cả </a>
+                    </h6>
+                </div>
+            </div>
+
+            <hr>
+
+            <table class="table table-striped">
+                <tbody>
+
+                    @for (int i = 0; i < 10; i++)
+                    {
+        <tr class="col-sm-12 small">
+            <td class="align-middle"><span>Huyền Huyễn</span></td>
+            <td class="align-middle w-25">
+                <h6 class="m-0">
+                    <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                </h6>
+            </td>
+            <td class="align-middle w-25">
+                <h6 class="m-0">
+                    <a href="~/Home/Truyen/Reading">Chương 01: Giới Thiệu</a>
+                </h6>
+            </td>
+            <td class="align-middle"><span>Người Đăng</span></td>
+            <td class="align-middle"><span>1 phút trước</span></td>
+        </tr>}
+                </tbody>
+            </table>
+        </div>
+
+        <div class="main-ranking">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 col-md-7 col-xl-4">
+                        <section class="ranking-week bg-white shadow mt-3">
+                            <header>
+                                <div class=" d-flex">
+                                    <h6 class="mr-4">
+                                        Nhận thưởng tuần <i class="fas fa-bahai"></i>
+                                    </h6>
+                                    <h6 style="margin-left: 15px !important;">
+                                        <a href="~/Home/Ranking">
+                                            Xem tất cả
+                                        </a>
+                                    </h6>
+                                </div>
+                            </header>
+
+                            @{ int t = 1; }
+
+                            <div class="ranking-week-list">
+                                <ul class="list-group ">
+                                    @for (int i = 0; i < 5; i++, t++)
+                                    {
+
+                        <li class="list-group-item">
+                            <span class="badge-primary badge-pill">@t</span>
+
+                            <span class="ranking-week-list-name">
+                                <a href="~/Home/Truyen">
+                                    Tấm Cám
+                                </a>
+                            </span>
+                            <span class="badge">2000</span>
+                        </li>
+                                        <li class="list-group-item list-group-item-info">
+                                            <span class="badge-primary badge-pill">@(t=t+1)</span>
+
+                                            <span class="ranking-week-list-name">
+                                                <a href="~/Home/Truyen">
+                                                    Ta Là Trương Tam Phong
+                                                </a>
+                                            </span>
+                                            <span class="badge">2000</span>
+                                        </li>
+}
+                                </ul>
+
+                            </div>
+                        </section>
+                    </div>
+
+                    @{ int e = 1; }
+
+                    <div class="col-lg-4 col-sm-12 col-md-7 col-xl-4">
+                        <section class="ranking-week bg-white shadow mt-3">
+                            <header>
+                                <div class=" d-flex">
+                                    <h6 class="mr-4">
+                                        Xem Nhiều Tuần <i class="fas fa-eye"></i>
+                                    </h6>
+                                    <h6 style="margin-left: 15px !important;">
+                                        <a href="~/Home/Ranking">
+                                            Xem tất cả
+                                        </a>
+                                    </h6>
+                                </div>
+                            </header>
+
+                            <div class="ranking-week-list">
+                                <ul class="list-group ">
+                                    @for (int i = 0; i < 5; i++, e++)
+                                    {
+                        <li class="list-group-item">
+                            <span class="badge-primary badge-pill">@e</span>
+                            <span class="ranking-week-list-name">
+                                <a href="~/Home/Truyen">
+                                    Tấm Cám
+                                </a>
+                            </span>
+                            <span class="badge">2000</span>
+                        </li>
+
+                                        <li class="list-group-item list-group-item-warning">
+                                            <span class="badge-primary badge-pill">@(e=e+1)</span>
+                                            <span class="ranking-week-list-name">
+                                                <a href="~/Home/Truyen">
+                                                    Ta Là Trương Tam Phong
+                                                </a>
+                                            </span>
+                                            <span class="badge">2000</span>
+                                        </li>
+}
+
+                                </ul>
+
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12 col-md-7 col-xl-4">
+                        <section class="ranking-week bg-white shadow mt-3">
+                            <header>
+                                <div class="d-flex">
+                                    <h6 class="mr-4">
+                                        Đề Cử Tuần <i class="fab fa-canadian-maple-leaf"></i>
+                                    </h6>
+                                    <h6 style="margin-left: 55px !important;">
+                                        <a href="~/Home/Truyen">
+                                            Xem tất cả
+                                        </a>
+                                    </h6>
+                                </div>
+                            </header>
+                            @{ int f = 1; }
+
+                            <div class="ranking-week-list">
+                                <ul class="list-group ">
+                                    @for (int i = 0; i < 5; i++, f++)
+                                    {
+                        <li class="list-group-item">
+                            <span class="badge-primary badge-pill">@f</span>
+                            <span class="ranking-week-list-name">
+                                <a href="~/Home/Truyen">
+                                    Tấm Cám
+                                </a>
+                            </span>
+                            <span class="badge">2000</span>
+                        </li>
+                                        <li class="list-group-item list-group-item-secondary">
+                                            <span class="badge-primary badge-pill">@(f=f+1)</span>
+                                            <span class="ranking-week-list-name">
+                                                <a href="~/Home/Truyen">
+                                                    Ta Là Trương Tam Phong
+                                                </a>
+                                            </span>
+                                            <span class="badge">2000</span>
+                                        </li>}
+
+                                </ul>
+
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="main-new">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 col-xl-4">
+                        <section class="nh-selection bg-white shadow mt-3">
+                            <header>
+                                <div class=" d-flex">
+                                    <h6 class="mr-4">
+                                        Mới đăng
+                                    </h6>
+                                    <h6>
+                                        <a href="#" style="margin-left: 75px !important">
+                                            Xem tất cả
+                                        </a>
+                                    </h6>
+                                </div>
+                            </header>
+
+                            <div id="carouselExampleControls" class="carousel slide mt-3" data-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <div>
+                                            <img src="https://static.cdnno.com/poster/thap-phuong-vo-thanh/300.jpg?t=1602581164" class="d-block w-100">
+                                        </div>
+                                        <div class="mr-3 text-center">
+                                            <h4 class="mt-3">Thập phương võ thánh</h4>
+                                            <div class="text-secondary text-overflow-3-lines">
+                                                Tận thế hoang thổ, thế tông ba năm, thiên hạ đại loạn, dân chúng lầm than. Trung ương hoàng triều sụp đổ, các nơi quần hùng cát cứ, môn phái độc lập...
+                                            </div>
+                                        </div>
+                                        <div class="text-center ">
+                                            <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                            <span class="border border-info small px-2 bg-info ml-4">
+                                                Huyền Huyễn
+                                            </span>
+                                        </div>
+                                        <div class="text-center  ">
+                                            <a href="#" title="" class="btn btn-danger text-white mt-4">Đọc ngay</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div>
+                                            <img src="https://static.cdnno.com/poster/thap-phuong-vo-thanh/300.jpg?t=1602581164" class="d-block w-100">
+                                        </div>
+                                        <div class="mr-3 text-center">
+                                            <h4 class="mt-3">Thập phương võ thánh</h4>
+                                            <div class="text-secondary text-overflow-3-lines">
+                                                Tận thế hoang thổ, thế tông ba năm, thiên hạ đại loạn, dân chúng lầm than. Trung ương hoàng triều sụp đổ, các nơi quần hùng cát cứ, môn phái độc lập...
+                                            </div>
+                                        </div>
+                                        <div class="text-center ">
+                                            <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                            <span class="border border-info small px-2 bg-info ml-4">
+                                                Huyền Huyễn
+                                            </span>
+                                        </div>
+                                        <div class="text-center  ">
+                                            <a href="#" title="" class="btn btn-danger text-white mt-4">Đọc ngay</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div>
+                                            <img src="https://static.cdnno.com/poster/thap-phuong-vo-thanh/300.jpg?t=1602581164" class="d-block w-100">
+                                        </div>
+                                        <div class="mr-3 text-center">
+                                            <h4 class="mt-3">Thập phương võ thánh</h4>
+                                            <div class="text-secondary text-overflow-3-lines">
+                                                Tận thế hoang thổ, thế tông ba năm, thiên hạ đại loạn, dân chúng lầm than. Trung ương hoàng triều sụp đổ, các nơi quần hùng cát cứ, môn phái độc lập...
+                                            </div>
+                                        </div>
+                                        <div class="text-center ">
+                                            <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                            <span class="border border-info small px-2 bg-info ml-4">
+                                                Huyền Huyễn
+                                            </span>
+                                        </div>
+                                        <div class="text-center">
+                                            <a href="#" title="" class="btn btn-danger text-white mt-4 ml-2">Đọc ngay</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="mt-3 col-lg-8 col-md-6- col-sm-12 col-xl-8">
+                        <section class="nh-selection bg-white shadow mt-3">
+                            <header>
+                                <div class=" d-flex">
+                                    <h6 class="mr-4">
+                                        Mới hoàn thành
+                                    </h6>
+                                    <h6>
+                                        <a href="#" style="float: left !important">
+                                            Xem tất cả
+                                        </a>
+                                    </h6>
+                                </div>
+                            </header>
+
+
+                            <div class="row mt-3">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small bg-info px-1">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small px-1 bg-info">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mt-3">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small bg-info px-1">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small px-1 bg-info">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mt-3">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small bg-info px-1">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small px-1 bg-info">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mt-3">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small bg-info px-1">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6">
+                                    <div class="media">
+                                        <div class="picture-btv">
+                                            <img src="https://toplist.vn/images/800px/than-mo-ngo-bien-quan-77519.jpg">
+                                        </div>
+                                        <div>
+                                            <h6>
+                                                <a href="~/Home/Truyen">Đạo Giới Thiên Hạ</a>
+                                            </h6>
+                                            <div class="content-btv-gt">
+                                                Lục Châu tỉnh lại sau giấc ngủ trở thành thế gian cường đại nhất già nhất ma đầu tổ sư gia, còn có chín cái tội ác chồng chất, uy chấn thiên hạ đồ đệ. Đại đồ đệ U Minh giáo giáo chủ thủ hạ ngàn vạn ma chúng, nhị
+                                                đồ đệ
+                                                Kiếm Ma một lời không hợp liền
+                                                khai sát giới. . .
+                                                Không có một thân tu vi, như thế nào dạy dỗ đám này ác đồ?
+                                                Đại đồ đệ Vu Chính Hải: "Lão phu cả đời này đánh đâu thắng đó, ngoại trừ sư phụ lão nhân gia ông ta, ai cũng đừng nghĩ cưỡi trên đầu ta."
+                                                Thất đồ đệ Tư Vô Nhai: "Sư phụ không chết, chúng ta ăn ngủ không yên a!"
+                                            </div>
+                                            <div class="content-btv-tg">
+                                                <a href="#"><i class="far fa-id-badge"></i>Hồ Hưng</a>
+                                                <span class="border border-info small px-1 bg-info">
+                                                    Huyền Huyễn
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

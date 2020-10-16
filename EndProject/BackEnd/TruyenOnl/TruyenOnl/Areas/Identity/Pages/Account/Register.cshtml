@@ -1,0 +1,58 @@
+﻿@page
+@model RegisterModel
+
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row" id="main-registration">
+    <div class="container col-md-4" style="width: 300px;">
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <br>
+            <h3 class="box-title m-t-40 m-b-0 text-center">Đăng ký</h3>
+            <br>
+            "Đăng ký tài khoản để sử dụng các tính năng của hệ thống"
+
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Email">Email</label>
+                <input asp-for="Input.Email" class="form-control" placeholder="Nhập địa chỉ email" />
+                <span asp-validation-for="Input.Email" class="text-black-50">Chúng tôi sẽ không chia sẻ thông tin của bạn cho bất kỳ ai</span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password">Mật khẩu</label>
+                <input asp-for="Input.Password" class="form-control" placeholder="Mật khẩu" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword">Nhập lại mật khẩu</label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" placeholder="Nhập lại mật khẩu" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-info btn-lg btn-block">Đăng Ký</button>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
+                    <div class="social">
+                        <a href="dangnhapgoogle" class="btn btn-googleplus text-danger" data-toggle="tooltip" title="" data-original-title="Đăng nhập bằng Google">
+                            Google+ <i aria-hidden="true" class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group m-b-0">
+                <div class="col-sm-12 text-center">
+                    <p>Bạn đã có tài khoản? <a href="./login.html" class="text-primary m-l-5"><b>Đăng Nhập</b></a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

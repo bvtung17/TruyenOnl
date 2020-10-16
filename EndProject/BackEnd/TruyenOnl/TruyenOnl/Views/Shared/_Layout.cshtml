@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]Truyện Online </title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Microsoft_Groove_logo.png" alt="logo" height="40">
+                    TruyenOnl
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <partial name="_LoginPartial" />
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item mb-1">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Thể Loại
+                                </button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                    <a class="dropdown-item">@Html.ActionLink("Tất cả", "Category", "Home")</a>
+                                    <a class="dropdown-item">@Html.ActionLink("Huyền Huyễn", "Category", "Home")</a>
+                                    <a class="dropdown-item">@Html.ActionLink("Tiên Hiệp", "Category", "Home")</a>
+                                    <a class="dropdown-item">@Html.ActionLink("Võng Du", "Category", "Home")</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nav-item mb-1">
+                            <div class="dropdown mr-1">
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Bảng Xếp Hạng
+                                </button>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                    <a class="dropdown-item">@Html.ActionLink("Đọc Nhiều", "Ranking", "Home")</a>
+                                    <a class="dropdown-item">@Html.ActionLink("Đánh giá", "Ranking", "Home")</a>
+                                    <a class="dropdown-item">@Html.ActionLink("Thảo luận", "Ranking", "Home")</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item mb-1">
+                            <button type="button" class="btn btn-info mr-1">@Html.ActionLink("Tủ truyện", "Profile", "Account")</button>
+                        </li>
+
+
+                        <li class="nav-item mb-1">
+                            <button type="button" class="btn btn-danger mr-1">@Html.ActionLink("Đăng truyện", "CreateBook", "Book")</button>
+                        </li>
+                        <li class="d-flex">
+                            <input type="text" name="text" placeholder="Từ khóa" class="form-control border-tertiary">
+                            <button type="button" class="btn btn-outline-secondary search">
+                                @Html.ActionLink("Tìm kiếm", "Search", "Home")
+                                
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer col-xl-12 col-md-12 col-sm-12 col-lg-12 col-12">
+
+        <div class="card text-center">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Truyện Onl - Nhóm 8 </h5>
+                <p class="card-text">Truyện Online là nền tảng mở trực tuyến, miễn phí đọc truyện chữ...</p>
+                <button class="btn btn-primary">@Html.ActionLink("Trang chủ", "Index", "Home")</button>
+            </div>
+
+            <div class="card-footer">
+                Được thực hiện bởi nhóm 8 - &copy 2019-2020
+            </div>
+        </div>
+
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

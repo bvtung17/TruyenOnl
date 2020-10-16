@@ -1,0 +1,57 @@
+﻿@page
+@model LoginModel
+
+
+
+<h1>@ViewData["Title"]</h1>
+<div class="row" id="main-login">
+    <div class="container col-md-4" style="width: 300px;">
+        <section>
+            <form id="account" method="post">
+                <br>
+                <h3 class="box-title m-t-40 m-b-0 text-center">Đăng nhập</h3>
+                <br>
+                "Nếu bạn chưa có tài khoản, hãy tiến hành đăng ký"
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email">Nhập địa chỉ mail</label>
+                    <input asp-for="Input.Email" class="form-control" placeholder="Nhập địa chỉ email" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password">Mật khẩu</label>
+                    <input asp-for="Input.Password" class="form-control" placeholder="Nhập mật khẩu" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Nhớ tài khoản</label>
+                    <a href="#quenmatkhau" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Quên mật khẩu?</a>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-info btn-lg btn-block">Đăng nhập</button>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 m-t-10 text-center">
+                        <div class="social">
+                            <a href="dangnhapgoogle" class="btn btn-googleplus text-danger" data-toggle="tooltip" title="" data-original-title="Đăng nhập bằng Google">
+                                Google+ <i aria-hidden="true" class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group m-b-0">
+                    <div class="col-sm-12 text-center">
+                        <p>Bạn chưa có tài khoản? <a href="./registrantion.html" class="text-primary m-l-5"><b>Đăng Ký</b></a></p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+    
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

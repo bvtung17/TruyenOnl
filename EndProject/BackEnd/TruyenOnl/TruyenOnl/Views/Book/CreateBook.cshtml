@@ -1,0 +1,78 @@
+﻿@model TruyenOnl.Data.Entities.Book
+
+@{
+    Layout = "~/Views/Shared/_LayoutBook.cshtml";
+}
+
+
+<div>
+    <div>
+        <nav aria-label="breadcrumb">
+            <section>
+                <h2 style="font-size: 1.25rem; margin: 10px;">Đăng truyện sáng tác</h2>
+            </section>
+        </nav>
+
+        <div class="col-sm-12 col-md-12 col-xl-12">
+            <form asp-action="CreateBook">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Tên Truyện</label>
+                    <input asp-for="Name" class="form-control" placeholder="Tên Truyện" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label">Giới Thiệu</label>
+                    <input asp-for="Description" class="form-control" placeholder="Giới thiệu" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ViewCount" class="control-label">Lượt Xem</label>
+                    <input asp-for="ViewCount" class="form-control" placeholder="Lượt Xem" />
+                    <span asp-validation-for="ViewCount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateCreated" class="control-label">Ngày Tạo</label>
+                    <input asp-for="DateCreated" class="form-control" />
+                    <span asp-validation-for="DateCreated" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rating" class="control-label"></label>
+                    <input asp-for="Rating" class="form-control" />
+                    <span asp-validation-for="Rating" class="text-danger" placeholder="Rating"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Review" class="control-label"></label>
+                    <input asp-for="Review" class="form-control" />
+                    <span asp-validation-for="Review" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Author" class="control-label">Tác Giả</label>
+                    <input asp-for="Author" class="form-control" />
+                    <span asp-validation-for="Author" class="text-danger" placeholder="Tác Giả"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ChapterCount" class="control-label">Số Chương</label>
+                    <input asp-for="ChapterCount" class="form-control" placeholder="Số Chương"/>
+                    <span asp-validation-for="ChapterCount" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Thêm Truyện Mới" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
